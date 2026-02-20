@@ -1,12 +1,12 @@
 Since you're preparing for frontend/React interviews (2+ years level), I’ll give you **technical interview–oriented Jest practice questions** — not basic definitions, but scenario-based ones that are commonly asked in real interviews.
 
----
+🔹 Level 1 – Core Jest Fundamentals
 
-# 🔹 Level 1 – Core Jest Fundamentals
-
-### 1️⃣ Mock Functions
+1️⃣ Mock Functions
 
 1. What is `jest.fn()` and how does it differ from a normal function?
+Ans:  jest.fn() : Its a mock function creator that helps track how many times the function was called, with what arguments, what was returned and control its implementation.
+
 2. Write a test to verify a function was called exactly 3 times.
 3. How do you check what arguments a mocked function received?
 4. How do you mock a callback function?
@@ -218,15 +218,3 @@ For your level, you MUST be comfortable with:
 ✔ Timers
 ✔ Custom hooks testing
 ✔ Module mocking
-
----
-
-If you want, I can:
-
-* ✅ Give you answers with solutions
-* ✅ Take a mock technical interview
-* ✅ Give you a timed coding round simulation
-* ✅ Create a PDF practice sheet
-* ✅ Give you a difficulty-wise roadmap
-
-Tell me which one you want 🚀
