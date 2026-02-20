@@ -1,0 +1,232 @@
+Since you're preparing for frontend/React interviews (2+ years level), I’ll give you **technical interview–oriented Jest practice questions** — not basic definitions, but scenario-based ones that are commonly asked in real interviews.
+
+---
+
+# 🔹 Level 1 – Core Jest Fundamentals
+
+### 1️⃣ Mock Functions
+
+1. What is `jest.fn()` and how does it differ from a normal function?
+2. Write a test to verify a function was called exactly 3 times.
+3. How do you check what arguments a mocked function received?
+4. How do you mock a callback function?
+5. Difference between:
+
+   * `toHaveBeenCalled()`
+   * `toHaveBeenCalledTimes()`
+   * `toHaveBeenCalledWith()`
+
+---
+
+### 2️⃣ Mocking Modules
+
+6. How do you mock an entire module using `jest.mock()`?
+7. How do you partially mock a module?
+8. How do you mock a default export?
+9. How do you mock named exports?
+10. What is `jest.requireActual()` used for?
+
+---
+
+### 3️⃣ Async Testing
+
+11. How do you test a function that returns a Promise?
+12. Difference between:
+
+* `async/await`
+* `return promise`
+* `done()` callback
+
+13. How do you test a rejected Promise?
+14. What happens if you forget `await` in an async test?
+
+---
+
+### 4️⃣ Timers
+
+15. How do you test `setTimeout`?
+16. Difference between:
+
+* `jest.useFakeTimers()`
+* `jest.useRealTimers()`
+
+17. How do you advance timers manually?
+18. What is `jest.runAllTimers()` vs `jest.advanceTimersByTime()`?
+
+---
+
+# 🔹 Level 2 – React + Jest (Most Important for You)
+
+Since you're preparing for React interviews:
+
+---
+
+### 5️⃣ Component Rendering
+
+19. How do you test if a component renders correctly?
+20. How do you test conditional rendering?
+21. How do you test if a button click updates state?
+22. How do you test form submission?
+23. How do you test input change events?
+
+---
+
+### 6️⃣ API Testing with Mocking
+
+24. How do you mock `fetch`?
+25. How do you mock `axios`?
+26. How do you test loading state?
+27. How do you test error state?
+28. How do you test success state?
+
+Example scenario:
+
+> Test a component that fetches data from JSONPlaceholder and displays a list.
+
+---
+
+### 7️⃣ Custom Hooks
+
+29. How do you test a custom hook?
+30. How do you mock dependencies inside a hook?
+31. How do you test a hook with async logic?
+
+---
+
+### 8️⃣ Testing Context
+
+32. How do you test a component that uses React Context?
+33. How do you wrap a component with a provider in tests?
+
+---
+
+# 🔹 Level 3 – Advanced Interview Questions (High Probability)
+
+### 9️⃣ Snapshot Testing
+
+34. What is snapshot testing?
+35. When should you avoid snapshot testing?
+36. Why do snapshots sometimes create bad tests?
+
+---
+
+### 🔟 Mock Resetting
+
+37. Difference between:
+
+* `clearAllMocks`
+* `resetAllMocks`
+* `restoreAllMocks`
+
+38. When would you use `beforeEach`?
+
+---
+
+### 1️⃣1️⃣ Testing Side Effects
+
+39. How do you test `useEffect`?
+40. How do you test cleanup functions?
+41. How do you test event listeners?
+
+---
+
+### 1️⃣2️⃣ Edge Case Questions (Interview Trap)
+
+42. Why is `act()` required?
+43. What causes:
+
+```
+Warning: An update to Component inside a test was not wrapped in act(...)
+```
+
+44. Why might a test pass locally but fail in CI?
+45. How do you debug flaky tests?
+
+---
+
+# 🔹 Real Coding Round Style Questions
+
+These are the type you might get in a live round:
+
+---
+
+### 💻 Q1: Write tests for this function:
+
+```js
+export function sum(a, b) {
+  return a + b;
+}
+```
+
+---
+
+### 💻 Q2: Test this async function:
+
+```js
+export const fetchUser = async () => {
+  const res = await fetch('/api/user');
+  return res.json();
+};
+```
+
+---
+
+### 💻 Q3: Test this React component:
+
+```jsx
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </>
+  );
+}
+```
+
+---
+
+### 💻 Q4: Test loading + success + error states.
+
+---
+
+# 🔥 High-Level Interview Discussion Questions
+
+You may be asked:
+
+* Why is testing important?
+* What is the difference between unit test and integration test?
+* What is code coverage?
+* Should we test implementation details?
+* What is TDD?
+* How do you test Redux?
+* How do you test React Query?
+* What should NOT be tested?
+
+---
+
+# 🎯 Since You’re Targeting 2+ Years Experience
+
+For your level, you MUST be comfortable with:
+
+✔ Mocking APIs
+✔ Async testing
+✔ React Testing Library
+✔ act()
+✔ Timers
+✔ Custom hooks testing
+✔ Module mocking
+
+---
+
+If you want, I can:
+
+* ✅ Give you answers with solutions
+* ✅ Take a mock technical interview
+* ✅ Give you a timed coding round simulation
+* ✅ Create a PDF practice sheet
+* ✅ Give you a difficulty-wise roadmap
+
+Tell me which one you want 🚀
